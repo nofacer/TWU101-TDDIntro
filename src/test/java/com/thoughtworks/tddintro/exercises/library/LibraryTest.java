@@ -71,7 +71,7 @@ public class LibraryTest {
     @Test
     public void shouldDeleteBookFromCollectionWhenRemovedByUser() throws IOException {
         // Add when/thenReturn here
-
+        when(bufferedReader.readLine()).thenReturn("The Two Towers");
         books.add("The Two Towers");
         library.removeBook();
 
