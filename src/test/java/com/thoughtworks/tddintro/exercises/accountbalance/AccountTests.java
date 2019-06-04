@@ -23,6 +23,8 @@ public class AccountTests {
 
     @Test
     public void shouldDecreaseMyBalanceWhenIWithdrawMoney(){
+        account.withDraw(50);
+        assertThat(account.getBalance(),is(50));
 
     }
 
