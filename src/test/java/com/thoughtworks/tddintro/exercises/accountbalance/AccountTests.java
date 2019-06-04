@@ -30,6 +30,8 @@ public class AccountTests {
 
     @Test
     public void shouldNotDecreaseMyBalanceWhenIWithdrawMoneyAndDoNotHaveEnoughToCoverTheWithdrawal(){
+        account.withDraw(200);
+        assertThat(account.getBalance(),is(100));
 
     }
 }
